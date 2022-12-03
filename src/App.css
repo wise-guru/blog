@@ -1,38 +1,378 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;1,600&family=Roboto:ital,wght@0,400;0,700;1,300&display=swap');
+
 .App {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.App {
+  /* padding: 0 10px; */
+  margin: auto;
+  position: relative;
+  width: 100%;
+  max-width: 450px;
+  font-family: 'Open Sans', sans-serif;
   display: flex;
   flex-direction: column;
+}
+
+.container {
+  padding: 0 10px;
+}
+
+/* ----------------- Dark Mode --------------------*/
+:root {
+  --bg: #fff;
+  --input-bg: #ffffff;
+  --comment-form-bg: #f2f2f2; 
+  --text: #000;
+  --secondary-text: rgba(117, 117, 117, 1);
+  --comment-divider: 1px solid rgba(230, 230, 230, 1);
+}
+
+.dark-mode {
+  /* add dark mode styles */
+  --input-bg: transparent;
+  --comment-form-bg: #1f1e1e;
+  --bg: #121212;
+  --text: #fff;
+  --secondary-text: #ffffff;
+  --comment-divider: 1px solid #bbb;
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--text);
+  
+}
+
+a {
+  color: var(--text);
+}
+
+
+/*-------------- Header -----------------*/
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  background-color: #212529;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.15);
+  color: #ffffff;
+}
+
+header img{
+  width: 48px;
+}
+
+header a {
+  color: #ffffff;
+}
+
+header .header-left {
+  display: flex;
+  /* flex-direction: column; */
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+header button {
+  background-color: transparent;
+  border-width: 0;
+  font-family: inherit;
+  font-size: inherit;
+  font-style: inherit;
+  font-weight: inherit;
+  line-height: inherit;
+  padding: 0;
+}
+
+.navbar-links li {
+  text-align: center;
+}
+
+.navbar-links li a {
+  text-decoration: none;
+  padding: .5rem 1rem;
+  display: block;
+}
+
+.navbar-links li:hover {
+  background-color: var(--dark-red);
+}
+
+ul, h1, h2, h3 {
+  padding: 0;
+  margin: 0;
+}
+
+/* ------------ Hamburger menu toggle for mobile -------*/
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+.navbar-links {
+  width: 100%;
+  display: none;
+  font-weight: 600;
+
+  /*Slide down */
+  position: relative;
+  box-sizing: border-box;
+  transition: top 600ms cubic-bezier(0.17, 0.04, 0.03, 0.94);
+  
+}
+
+.navbar-links ul {
+  flex-direction: column;
+  width: 100%;
+}
+
+
+.toggle-button {
+  position: absolute;
+  top: 1.5rem;
+  right: 1rem;
+  display: none; 
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 21px;
+}
+
+.toggle-button:hover {
+  box-shadow: 0px 0px 5px #fff;
+}
+
+.toggle-button .bar {
+  height: 3px;
+  width: 100%;
+  background-color: white;
+  border-radius: 10px;
+}
+
+
+.navbar-links.active {
+  display: flex;
+  
+
+  transition: top 600ms cubic-bezier(0.17, 0.04, 0.03, 0.94);
+}
+
+/* ----- Dark Mode toggle ------*/
+
+.dark-mode-toggle input[type=checkbox] {
+  display: none;
+}
+
+.dark-mode-toggle label {
+  background-color: #777;
+  border: 2px solid #555;
+  border-radius: 50px;
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: all ease-in-out 0.3s;
+  width: 72px;
+  height: 32px;
+}
+
+.dark-mode-toggle label::after {
+  background-color: #555;
+  border-radius: 50%;
+  content: ' ';
+  cursor: pointer;
+  display: inline-block;
+  position: absolute;
+  left: 2px;
+  top: 2px;
+  transition: all ease-in-out 0.3s;
+  width: 28px;
+  height: 28px;
+}
+
+.dark-mode-toggle input[type=checkbox]:checked ~ label {
+  background-color: #00a0fc;
+  border-color: #006dc9;
+}
+
+.dark-mode-toggle input[type=checkbox]:checked ~ label::after {
+  background-color: #0054B0;
+  transform: translateX(38px);
+}
+
+.dark-mode-toggle {
+  margin-left: 8px;
+}
+
+.theme-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.theme-container img {
+  width: 32px;
+}
+
+
+/*----------------------All Posts Page-------------------*/
+
+.content-container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.post.container .comment-count {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.post.container .comment-count img {
+  width: 28px;
+}
+
+.comment-count img:hover {
+  cursor: pointer;
+  opacity: 0.70;
+  /* transform: scale(1.025); */
+  
+}
+
+.post.container .image-box img {
+  width: 100px;
+  border-radius: 8px;
+}
+
+.post.container .bottom-row, .post.container .left, .post-box {
+  display: flex;
+}
+
+.post.container .date, .post-page .date {
+  color: var(--secondary-text);
+  font-size: 0.75rem;
+}
+
+.post-box {
+  justify-content: space-around;
+  align-items: center;
+  padding: 8px;
+}
+
+.post-box:hover {
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.15);
+}
+
+.post.container .left {
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.bottom-row {
+  justify-content: space-around;
+  align-items: center;
+}
+
+/*------------------------Post Page ---------------------------*/
+
+.post-page .post-text {
+  white-space: pre-line;
+}
+
+.post-page .image-box img {
+  width: 100%;
+}
+
+.post-page .comment-box img {
+  width: 48px;
+}
+
+.post-page .comment-box {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+  text-align: left;
+  border-bottom: var(--comment-divider);
+  padding: 25px 0 48px 0;
+}
+
+.comment-form-container input, textarea {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  box-sizing: border-box;
+  border-radius: 4px;
+  background-color: var(--input-bg);
+  color: var(--text);
+  border: 1px solid #ccc;
+}
+
+
+.comment-form-container button {
+  width: 100%;
+  background-color: #4CAF50;
   color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
+.comment-form-container button:hover {
+  background-color: #45a049;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.comment-form-container {
+  border-radius: 5px;
+  background-color: var(--comment-form-bg);
+  padding: 20px;
 }
+
+.comments-container h1 {
+  border-bottom: 1px solid rgba(230, 230, 230, 1);
+  padding: 20px 20px 12px;
+}
+
+.dark-mode .comments-container {
+  background-color: var(--comment-form-bg);
+}
+
+.comment-top {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.post-page .left {
+  align-self: start;
+}
+
+.post-page .right {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-between; */
+  text-align-last: left;
+
+  gap: 8px;
+}
+
+.comment-box p {
+  margin: 0;
+  padding: 0;
+}
+
+/* .post-page .date {
+  align-self: flex-end;
+} */
