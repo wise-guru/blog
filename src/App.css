@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;1,600&family=Roboto:ital,wght@0,400;0,700;1,300&display=swap');
 
+html{
+  scroll-behavior:smooth
+}
+
 .App {
   text-align: center;
 }
@@ -62,7 +66,8 @@ header {
   color: #ffffff;
 }
 
-header img{
+header img
+{
   width: 48px;
 }
 
@@ -77,7 +82,7 @@ header .header-left {
   justify-content: center;
 }
 
-header button {
+header button, .share-links button {
   background-color: transparent;
   border-width: 0;
   font-family: inherit;
@@ -86,6 +91,7 @@ header button {
   font-weight: inherit;
   line-height: inherit;
   padding: 0;
+  cursor: pointer;
 }
 
 .navbar-links li {
@@ -284,6 +290,61 @@ li {
 
 /*------------------------Post Page ---------------------------*/
 
+.author-box {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  text-align: left;
+}
+
+.author-box img {
+  width: 56px;
+}
+
+.share-links {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.share-links svg, .share-links img {
+  width: 28px;
+  border-radius: 8px;
+}
+
+.share-links button {
+  display: flex;
+  align-items: center;
+}
+
+.visuallyhidden{position:absolute;clip:rect(1px,1px,1px,1px)}
+.copybutton{background-color:#fff;border:0;outline:0;cursor:pointer;opacity:1;position:absolute;width:40px;height:40px;z-index:9;border-radius:24px}
+.button-tooltip-container {
+    display: flex;
+    align-items: center;
+    margin-top: 16px;
+    min-height: 30px;
+
+}
+#custom-tooltip {
+    display: none;
+    margin-left: 16px;
+    padding: 5px 12px;
+    background-color: #000000df;
+    
+    border-radius: 4px;
+    color: #fff;
+}
+
+.copy-link, .copy-link .image {
+  display: flex;
+  align-items: center;
+}
+
+
+
+
+
 .post-page .post-text {
   white-space: pre-line;
 }
@@ -305,6 +366,8 @@ li {
   border-bottom: var(--comment-divider);
   padding: 25px 0 48px 0;
 }
+
+/* For comment form */
 
 .comment-form-container input, textarea {
   width: 100%;
@@ -340,6 +403,8 @@ li {
   padding: 20px;
 }
 
+/*For comments section */
+
 .comments-container h1 {
   border-bottom: 1px solid rgba(230, 230, 230, 1);
   padding: 20px 20px 12px;
@@ -349,17 +414,17 @@ li {
   background-color: var(--comment-form-bg);
 }
 
-.comment-top {
+.comment-box .comment-top {
   display: flex;
   align-items: center;
   gap: 8px;
 }
 
-.post-page .left {
+.post-page .comment-box .left {
   align-self: start;
 }
 
-.post-page .right {
+.post-page .comment-box .right {
   display: flex;
   flex-direction: column;
   /* justify-content: space-between; */
