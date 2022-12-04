@@ -5,7 +5,7 @@ const DarkModeToggle = (props) => {
 
   useEffect(() => {
     setIsDarkMode(document.body.classList.contains("dark-mode"));
-  }, []);
+  }, [setIsDarkMode]);
 
   const toggle = () => {
     setIsDarkMode(!isDarkMode);
