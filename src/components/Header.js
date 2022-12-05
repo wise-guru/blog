@@ -38,10 +38,14 @@ function Header(props) {
       <nav className={`navbar-links ${isMenuActive ? "active" : null}`}>
         <ul>
           <li>
-            <Link to="/">Home</Link>
+            <Link to="/" className="hover">
+              Home
+            </Link>
           </li>
           <li>
-            <Link to="/posts">Posts</Link>
+            <Link to="/posts" className="hover">
+              Posts
+            </Link>
           </li>
           <li>{/* <Link to="/about">About</Link> */}</li>
           <li>
