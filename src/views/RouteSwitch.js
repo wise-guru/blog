@@ -1,22 +1,14 @@
 import { Route, Routes } from "react-router-dom";
-import About from "./About";
+// import About from "./About";
 import Homepage from "./Homepage";
 import PostPage from "./PostPage";
 import Posts from "./Posts";
+import Privacy from "./Privacy";
+import TermsAndConditions from "./TermsConditons";
 
 function RouteSwitch(props) {
-  const {
-    posts,
-    post,
-    allComments,
-    comments,
-    currentComments,
-    isDarkMode,
-    getBlogPosts,
-    getAllComments,
-    // getPost,
-    // getPostComments,
-  } = props;
+  const { posts, allComments, isDarkMode, getBlogPosts, getAllComments, api } =
+    props;
   return (
     <Routes>
       <Route path="/" element={<Homepage />}></Route>
@@ -35,9 +27,14 @@ function RouteSwitch(props) {
       ></Route>
       <Route
         path="/posts/:id"
-        element={<PostPage isDarkMode={isDarkMode} />}
+        element={<PostPage isDarkMode={isDarkMode} api={api} />}
       ></Route>
-      <Route path="/about" element={<About />}></Route>
+      {/* <Route path="/about" element={<About />}></Route> */}
+      <Route path="/privacy" element={<Privacy />}></Route>
+      <Route
+        path="/terms-and-conditions"
+        element={<TermsAndConditions />}
+      ></Route>
     </Routes>
   );
 }
