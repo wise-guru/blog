@@ -1,12 +1,9 @@
 import { Link } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
 import { ReactComponent as LinkedInDark } from "../assets/linkedin.svg";
-import { ReactComponent as LinkedIn } from "../assets/linkedin.svg";
-import { ReactComponent as Github } from "../assets/github.svg";
 import GithubDark from "../assets/github-dark.png";
 
-function Footer(props) {
-  const { isDarkMode } = props;
+function Footer() {
   return (
     <footer>
       <div className="footer-info">
@@ -24,7 +21,6 @@ function Footer(props) {
         </div>
 
         <div className="icon-container">
-          {/* <div className="icons"> */}
           <a href="https://www.linkedin.com/in/myla-a-19b4ab174/">
             <LinkedInDark salt="copy link" title="LinkedIn" />
           </a>
@@ -32,8 +28,6 @@ function Footer(props) {
           <a href="https://github.com/wise-guru">
             <img src={GithubDark} alt="Github Logo" title="Github" />
           </a>
-
-          {/* </div> */}
         </div>
       </div>
     </footer>

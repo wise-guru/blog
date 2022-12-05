@@ -1,4 +1,4 @@
-import { useRef, useState } from "react";
+import { useState } from "react";
 import { Link } from "react-router-dom";
 import Logo from "../assets/blog-logo.png";
 import DarkModeToggle from "./DarkModeToggle";
@@ -25,7 +25,7 @@ function Header(props) {
           <img src={Logo} alt="The letter B" />
         </Link>
         <Link to="/">
-          <h2>Rubber Ducky</h2>
+          <h3>Rubber Ducky</h3>
         </Link>
       </div>
       <div>
@@ -43,9 +43,7 @@ function Header(props) {
           <li>
             <Link to="/posts">Posts</Link>
           </li>
-          <li>
-            <Link to="/about">About</Link>
-          </li>
+          <li>{/* <Link to="/about">About</Link> */}</li>
           <li>
             <div className="theme-container">
               <div>
