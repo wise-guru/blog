@@ -23,7 +23,6 @@ function PostPage(props) {
   const [post, setPost] = useState();
   const [postDate, setPostDate] = useState();
   const [comments, setComments] = useState();
-  const [currentComments, setCurrentComments] = useState();
 
   // const { post, getPost, getComments, comments} = props;
 
@@ -66,13 +65,12 @@ function PostPage(props) {
         if (reqComments.status !== 200) return;
         const commentsJson = await reqComments.json();
         setComments(commentsJson);
-        setCurrentComments(commentsJson);
       } catch (err) {
         console.log(err);
       }
     }
     getPostComments();
-  }, [id]);
+  }, [id, api]);
 
   async function submitComment(e) {
     e.preventDefault();

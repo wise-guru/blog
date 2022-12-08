@@ -12,7 +12,7 @@ function Posts(props) {
   useEffect(() => {
     getBlogPosts();
     getAllComments();
-  }, []);
+  }, [getAllComments, getBlogPosts]);
 
   console.log(posts);
 
