@@ -791,8 +791,12 @@ footer .icon-container img {
   }
 
   .post-page.container{
-    width: 80%;
+    width: 70%;
     align-self: center;
+  }
+
+  .comments-container {
+    padding: 10px;
   }
 }
 

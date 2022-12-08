@@ -14,8 +14,6 @@ function Posts(props) {
     getAllComments();
   }, []);
 
-  console.log(posts);
-
   return (
     <div className="post-list container">
       {posts ? (
