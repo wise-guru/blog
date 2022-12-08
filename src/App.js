@@ -22,7 +22,6 @@ function App() {
       const getPosts = await fetch(`${api}/posts`, options);
 
       const postInfo = await getPosts.json();
-      console.log(postInfo);
       setPosts(postInfo);
     } catch (error) {
       console.log(error);

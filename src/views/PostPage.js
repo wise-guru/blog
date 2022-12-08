@@ -75,7 +75,7 @@ function PostPage(props) {
   async function submitComment(e) {
     e.preventDefault();
     try {
-      const req = await fetch(`${api}/posts/${id}/comments`, {
+      const req = await fetch(`${api}/comments`, {
         method: "POST",
         body: JSON.stringify({
           name: name,
