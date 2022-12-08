@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/blog/static/css/main.71cc632f.css",
-    "main.js": "/blog/static/js/main.c7d4bf45.js",
+    "main.css": "/blog/static/css/main.fafcfd16.css",
+    "main.js": "/blog/static/js/main.2d68ad6f.js",
     "static/media/water-duck.jpeg": "/blog/static/media/water-duck.854325198d6d9313fce8.jpeg",
     "static/media/screenshot.png": "/blog/static/media/screenshot.3b8318917453863719d6.png",
     "static/media/sun-ducks.avif": "/blog/static/media/sun-ducks.60eb6d2cec98c550c28d.avif",
@@ -21,11 +21,11 @@
     "static/media/github.svg": "/blog/static/media/github.22e65707326e3e1e37af.svg",
     "static/media/linkedin.svg": "/blog/static/media/linkedin.de268f5055019ff686d4cba0d6b90d05.svg",
     "static/media/linkedin-dark.svg": "/blog/static/media/linkedin-dark.7d236d62fa406d6ed240.svg",
-    "main.71cc632f.css.map": "/blog/static/css/main.71cc632f.css.map",
-    "main.c7d4bf45.js.map": "/blog/static/js/main.c7d4bf45.js.map"
+    "main.fafcfd16.css.map": "/blog/static/css/main.fafcfd16.css.map",
+    "main.2d68ad6f.js.map": "/blog/static/js/main.2d68ad6f.js.map"
   },
   "entrypoints": [
-    "static/css/main.71cc632f.css",
-    "static/js/main.c7d4bf45.js"
+    "static/css/main.fafcfd16.css",
+    "static/js/main.2d68ad6f.js"
   ]
 }
