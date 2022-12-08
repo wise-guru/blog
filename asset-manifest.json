@@ -1,11 +1,12 @@
 {
   "files": {
     "main.css": "/blog/static/css/main.70bf9025.css",
-    "main.js": "/blog/static/js/main.0adc6786.js",
+    "main.js": "/blog/static/js/main.d553ef65.js",
     "static/media/water-duck.jpeg": "/blog/static/media/water-duck.854325198d6d9313fce8.jpeg",
     "static/media/sun-ducks.avif": "/blog/static/media/sun-ducks.60eb6d2cec98c550c28d.avif",
     "static/media/nomad.jpg": "/blog/static/media/nomad.30b9e0ff63d794f64d69.jpg",
     "static/media/kiwani.jpg": "/blog/static/media/kiwani.310d9ec1c1e3fd790b10.jpg",
+    "static/media/ducks.jpg": "/blog/static/media/ducks.63cf45c67a74d7474902.jpg",
     "static/media/rubber-duck.jpg": "/blog/static/media/rubber-duck.9d80eda72fecaaafd0b1.jpg",
     "static/media/blog-logo.png": "/blog/static/media/blog-logo.7d901470f65fe093a014.png",
     "static/media/rubber-ducky.jpg": "/blog/static/media/rubber-ducky.b88b87fd11621a2677f9.jpg",
@@ -20,10 +21,10 @@
     "static/media/linkedin.svg": "/blog/static/media/linkedin.de268f5055019ff686d4cba0d6b90d05.svg",
     "static/media/linkedin-dark.svg": "/blog/static/media/linkedin-dark.7d236d62fa406d6ed240.svg",
     "main.70bf9025.css.map": "/blog/static/css/main.70bf9025.css.map",
-    "main.0adc6786.js.map": "/blog/static/js/main.0adc6786.js.map"
+    "main.d553ef65.js.map": "/blog/static/js/main.d553ef65.js.map"
   },
   "entrypoints": [
     "static/css/main.70bf9025.css",
-    "static/js/main.0adc6786.js"
+    "static/js/main.d553ef65.js"
   ]
 }
