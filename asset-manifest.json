@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/blog/static/css/main.70bf9025.css",
-    "main.js": "/blog/static/js/main.3ce07d47.js",
+    "main.js": "/blog/static/js/main.c7d4bf45.js",
     "static/media/water-duck.jpeg": "/blog/static/media/water-duck.854325198d6d9313fce8.jpeg",
     "static/media/screenshot.png": "/blog/static/media/screenshot.3b8318917453863719d6.png",
     "static/media/sun-ducks.avif": "/blog/static/media/sun-ducks.60eb6d2cec98c550c28d.avif",
@@ -22,10 +22,10 @@
     "static/media/linkedin.svg": "/blog/static/media/linkedin.de268f5055019ff686d4cba0d6b90d05.svg",
     "static/media/linkedin-dark.svg": "/blog/static/media/linkedin-dark.7d236d62fa406d6ed240.svg",
     "main.70bf9025.css.map": "/blog/static/css/main.70bf9025.css.map",
-    "main.3ce07d47.js.map": "/blog/static/js/main.3ce07d47.js.map"
+    "main.c7d4bf45.js.map": "/blog/static/js/main.c7d4bf45.js.map"
   },
   "entrypoints": [
     "static/css/main.70bf9025.css",
-    "static/js/main.3ce07d47.js"
+    "static/js/main.c7d4bf45.js"
   ]
 }
