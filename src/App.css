@@ -127,10 +127,6 @@ header button, .share-links button {
   display: block;
 }
 
-.navbar-links li:hover {
-  background-color: var(--dark-red);
-}
-
 ul, h1, h2, h3 {
   padding: 0;
   margin: 0;
@@ -161,7 +157,6 @@ li {
 }
 
 .navbar-links .hover:hover {
-  /* background-color: var(--dark-red); */
   border-bottom: 2.75px solid #ffffff;
 }
 
@@ -187,17 +182,16 @@ header {
   width: 100%;
   display: none;
   font-weight: 600;
-
-  /*Slide down */
-  position: relative;
-  box-sizing: border-box;
-  transition: top 600ms cubic-bezier(0.17, 0.04, 0.03, 0.94);
   
 }
 
 .navbar-links ul {
   flex-direction: column;
   width: 100%;
+}
+
+.navbar-links .hover:hover {
+  border-bottom: none;
 }
 
 
