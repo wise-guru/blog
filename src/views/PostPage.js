@@ -23,7 +23,7 @@ function PostPage(props) {
   const [post, setPost] = useState();
   const [postDate, setPostDate] = useState();
   const [comments, setComments] = useState();
-  // const [currentComments, setCurrentComments] = useState();
+  const [currentComments, setCurrentComments] = useState();
 
   // const { post, getPost, getComments, comments} = props;
 
@@ -66,6 +66,7 @@ function PostPage(props) {
         if (reqComments.status !== 200) return;
         const commentsJson = await reqComments.json();
         setComments(commentsJson);
+        setCurrentComments(commentsJson);
       } catch (err) {
         console.log(err);
       }
@@ -76,7 +77,7 @@ function PostPage(props) {
   async function submitComment(e) {
     e.preventDefault();
     try {
-      const req = await fetch(`http://localhost:8888/comments`, {
+      const req = await fetch(`${api}/posts/${id}/comments`, {
         method: "POST",
         body: JSON.stringify({
           name: name,
