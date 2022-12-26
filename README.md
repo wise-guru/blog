@@ -1,6 +1,8 @@
 # Blog
 
-![Blog Screenshot](https://github.com/wise-guru/blog/blob/main/src/assets/screenshot.png)
+The Rubber Ducky Blog is a fullstack application that utilizes the MERN stack. Users can browse posts and leave comments. Information is displayed from REST API endpoints.
+
+![Blog Screenshot](https://github.com/wise-guru/blog/blob/main/src/assets/blog.webp)
 
 Click here for a [live link](https://wise-guru.github.io/blog/).
 
