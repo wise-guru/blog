@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/blog/static/css/main.fafcfd16.css",
-    "main.js": "/blog/static/js/main.924f3cae.js",
+    "main.css": "/blog/static/css/main.fe4663ab.css",
+    "main.js": "/blog/static/js/main.a0092bff.js",
     "static/media/blog.webp": "/blog/static/media/blog.429b34d821cd395ae07d.webp",
     "static/media/water-duck.jpeg": "/blog/static/media/water-duck.854325198d6d9313fce8.jpeg",
     "static/media/screenshot.png": "/blog/static/media/screenshot.3b8318917453863719d6.png",
@@ -14,6 +14,7 @@
     "static/media/ducks.jpg": "/blog/static/media/ducks.63cf45c67a74d7474902.jpg",
     "static/media/work.png": "/blog/static/media/work.8b237c4bc121a93d1530.png",
     "static/media/rubber-duck.jpg": "/blog/static/media/rubber-duck.9d80eda72fecaaafd0b1.jpg",
+    "static/media/chatgpt.jpeg": "/blog/static/media/chatgpt.df9911587f0a52151361.jpeg",
     "static/media/blog-logo.png": "/blog/static/media/blog-logo.7d901470f65fe093a014.png",
     "static/media/rubber-ducky.jpg": "/blog/static/media/rubber-ducky.b88b87fd11621a2677f9.jpg",
     "static/media/blog.png": "/blog/static/media/blog.4fe6bf521e4984d410e0.png",
@@ -21,16 +22,17 @@
     "static/media/vector.jpg": "/blog/static/media/vector.fe1e5d86a6a657f724a0.jpg",
     "static/media/profile-dark.png": "/blog/static/media/profile-dark.5e5c8245054a82e19895.png",
     "static/media/avatar.png": "/blog/static/media/avatar.4fe1af3595f0909c556d.png",
+    "static/media/chatgpt.webp": "/blog/static/media/chatgpt.228ecd72e6bdd28328fb.webp",
     "static/media/logo.svg": "/blog/static/media/logo.114d44e41f2664677ca2.svg",
     "index.html": "/blog/index.html",
     "static/media/github.svg": "/blog/static/media/github.22e65707326e3e1e37af.svg",
     "static/media/linkedin.svg": "/blog/static/media/linkedin.de268f5055019ff686d4cba0d6b90d05.svg",
     "static/media/linkedin-dark.svg": "/blog/static/media/linkedin-dark.7d236d62fa406d6ed240.svg",
-    "main.fafcfd16.css.map": "/blog/static/css/main.fafcfd16.css.map",
-    "main.924f3cae.js.map": "/blog/static/js/main.924f3cae.js.map"
+    "main.fe4663ab.css.map": "/blog/static/css/main.fe4663ab.css.map",
+    "main.a0092bff.js.map": "/blog/static/js/main.a0092bff.js.map"
   },
   "entrypoints": [
-    "static/css/main.fafcfd16.css",
-    "static/js/main.924f3cae.js"
+    "static/css/main.fe4663ab.css",
+    "static/js/main.a0092bff.js"
   ]
 }
