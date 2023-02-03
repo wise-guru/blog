@@ -71,7 +71,7 @@ function Posts(props) {
           </ul>
         </div>
       ) : (
-        <div className="loading-animation">
+        <div className="loading-animation" style={{ height: "90vh" }}>
           <Waveform color="#e85d04" />
         </div>
       )}
