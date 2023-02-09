@@ -136,7 +136,7 @@ a {
   text-decoration: none;
 }
 
-li {
+ul li {
   list-style: none;
 }
 
@@ -705,6 +705,10 @@ footer .icon-container, footer .link-container {
   justify-content: center;
   align-items: center;
   gap: 0.5rem;
+}
+
+footer .link-container a:hover {
+  color: #eeab3c;
 }
 
 

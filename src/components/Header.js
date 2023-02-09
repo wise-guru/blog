@@ -47,7 +47,11 @@ function Header(props) {
               Posts
             </Link>
           </li>
-          <li>{/* <Link to="/about">About</Link> */}</li>
+          <li>
+            <Link to="/about" className="hover">
+              About
+            </Link>
+          </li>
           <li>
             <div className="theme-container">
               <div>

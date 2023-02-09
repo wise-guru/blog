@@ -1,44 +1,38 @@
 function Privacy() {
   return (
-    <div className="privacy container">
+    <div className="privacy container" style={{ minHeight: "85vh" }}>
       <h1>Privacy Policy</h1>
 
       <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
-        posuere, velit eu elementum aliquam, lacus purus tristique est, vel
-        elementum urna sem ut nunc. Vestibulum ultrices enim nulla, in
-        scelerisque massa consequat id. In hac habitasse platea dictumst. Etiam
-        ut venenatis justo. Nulla sed ligula ac augue consequat gravida vitae
-        lacinia lacus. Proin sapien dolor, semper sodales tortor consectetur,
-        ultrices posuere sem. Sed consequat sollicitudin nunc at laoreet.
-        Pellentesque ultricies augue ultrices, maximus quam ut, dictum lorem.
-        Morbi imperdiet ligula eget odio fermentum lacinia. Sed finibus ligula
-        quis malesuada venenatis. Nulla sit amet convallis erat. Sed aliquet
-        aliquam nulla at aliquam. Donec tristique libero nibh, vel varius tortor
-        venenatis vel. Interdum et malesuada fames ac ante ipsum primis in
-        faucibus. Interdum et malesuada fames ac ante ipsum primis in faucibus.
-        Donec iaculis erat et dolor ornare feugiat.
+        At the Rubber Ducky Blog, we're all about keeping things simple and
+        making you smile. That's why our privacy policy is short and sweet, just
+        like a rubber ducky in a kiddie pool.
       </p>
 
       <p>
-        Ut aliquet ex vitae ultrices consectetur. Fusce mauris elit, dapibus in
-        urna consequat, varius finibus ipsum. Fusce ligula risus, cursus eu
-        dolor ac, pretium mollis leo. Donec molestie ac diam at venenatis.
-        Integer id aliquet velit. Aliquam sem sapien, viverra scelerisque nunc
-        efficitur, molestie tempus dui. Duis sed felis ultricies augue luctus
-        luctus sit amet tincidunt lectus.
+        We don't ask for your name, email address, or any other information that
+        could be used to identify you. We don't use cookies, tracking
+        technologies, or any other methods to gather information about your
+        visit to our site. We don't share your information with third parties,
+        unless you're a rubber duck and want to be included in our rubber duck
+        directory (in which case, please contact us directly).
       </p>
 
       <p>
-        Donec dictum felis nec nulla finibus, eu dictum orci sodales. In hac
-        habitasse platea dictumst. Vestibulum dictum eget massa posuere lacinia.
-        Nullam non ultricies eros. Nunc eu lorem nunc. Duis et ullamcorper
-        velit. Praesent in nunc lectus. Vivamus fermentum pulvinar pharetra.
-        Aenean fringilla iaculis orci pharetra mollis. Ut dapibus lectus id ante
-        vehicula, sit amet interdum mauris commodo. Aliquam eleifend dolor a
-        justo rhoncus, at convallis velit posuere. Mauris ut odio ac felis
-        fermentum tempor. Suspendisse sed ligula porttitor, tincidunt lectus ac,
-        posuere urna.
+        We do our best to keep the Rubber Ducky Blog secure, but we can't
+        guarantee that it will be 100% secure. So if you have sensitive
+        information, you may want to keep it to yourself.
+      </p>
+
+      <p>
+        Our Privacy Policy may change from time to time, but rest assured that
+        we will never collect any personal information from you.
+      </p>
+
+      <p>
+        If you have any questions or concerns about our Privacy Policy, feel
+        free to drop us a line at [insert your email address]. But remember,
+        this is the Rubber Ducky Blog, so don't take anything too seriously.
       </p>
     </div>
   );
