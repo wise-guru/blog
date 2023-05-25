@@ -31,7 +31,7 @@ function Privacy() {
 
       <p>
         If you have any questions or concerns about our Privacy Policy, feel
-        free to drop us a line at [insert your email address]. But remember,
+        free to drop us a line. But remember,
         this is the Rubber Ducky Blog, so don't take anything too seriously.
       </p>
     </div>
